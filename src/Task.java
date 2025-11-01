@@ -3,7 +3,7 @@ public class Task {
     private String description;
     private boolean isCompleted;
 
-    public Task (String description) {
+    public Task(String description) {
         this.description = description;
         this.isCompleted = false;
     }
@@ -18,11 +18,5 @@ public class Task {
 
     public boolean isCompleted() {
         return isCompleted;
-    }
-
-    @Override
-    public String toString() {
-       String status = isCompleted ? "[X]" : "[ ]";
-       return status + " " + description;
     }
 }
