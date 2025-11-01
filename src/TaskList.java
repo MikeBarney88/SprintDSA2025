@@ -52,7 +52,7 @@ public class TaskList {
         int position = 1;
 
         while (current != null) {
-            String status = current.task.isCompleted() ? "[Done]" : "[Todo]";
+            String status = current.task.isCompleted() ? "[Completed]" : "[Pending]";
             System.out.println(position + ". " + status + " " + current.task.getDescription());
             current = current.next;
             position++;
